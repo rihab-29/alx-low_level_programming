@@ -1,9 +1,6 @@
 #include<stdio.h>
 /**
- * main - Entry point
- *
- * Description: using sizeof to print he size of various types.
- *
+ * main - A program that prints the size of various computer types 
  * Return: Always 0 (Success)
 */
 int main(void)
@@ -19,5 +16,5 @@ printf("Size of an int: %lu byte(s)\n", (unsigned 1ong)sizeof(b));
 printf("Size of a long int: %lu byte(s)\n", (unsigned 1ong)sizeof(c));
 printf("Size of a long long int: %lu byte(s)\n", (unsigned 1ong)sizeof(d));
 printf("Size of a float: %lu byte(s)\n", (unsigned 1ong)sizeof(f));
-	return (0);
+return (0);
 }
