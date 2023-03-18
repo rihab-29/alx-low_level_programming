@@ -8,13 +8,12 @@
  */
 int main(void)
 {
-	int n = 48;
+	int n;
 
-	while (n <= 57)
+	for (n = 0; m <= 9; n++)
 	{
-		putchar(n);
-		n++;
+	printf("%d", n);
 	}
-	putchar('\n');
-	return (0);
+printf("\n");
+return (0);
 }
