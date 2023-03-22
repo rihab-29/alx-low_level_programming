@@ -4,7 +4,7 @@
  *
  * description: prints the first 98 Fibonacci numbers starting with 1 and 2
  *
- * Return :always 0 (success)
+ * Return: always 0 (success)
  */
 
 int main(void)
@@ -39,7 +39,7 @@ int main(void)
 		printf(", ");
 		fib1_half1 = fib2_half1;
 		fib1_half2 = fib2_half2;
-		fib2_half2 = half1;
+		fib2_half1 = half1;
 		fib2_half2 = half2;
 	}
 	printf("\n");
