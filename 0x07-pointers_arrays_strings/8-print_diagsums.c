@@ -1,5 +1,6 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
+
 /**
  * print_diagsums - prints the sum of the two diagonals of a matrix
  * @a: the matrix
@@ -8,7 +9,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, sum1 = 0, sum2 = 0;
+	int i, n, sum1 = 0, sum2 = 0;
 
 	for (i = 0; i <= (size * size); i = i + size + 1)
 	{
