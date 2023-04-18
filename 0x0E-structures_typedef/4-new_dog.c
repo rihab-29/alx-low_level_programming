@@ -1,12 +1,12 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 
 /**
  * _strlen - returns the length of a string
  * @s: string
  * Return: lentgh
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int len = 0;
 
@@ -41,7 +41,7 @@ char *_strcpy(char *dest, char *src)
  * @name: new dog's name
  * @age: new dog's age
  * @owner: name of new dog's owner
- * Return: truct pointer dog
+ * Return: struct pointer dog
  * NULL if fail
  */
 dog_t *new_dog(char *name, float age, char *owner)
