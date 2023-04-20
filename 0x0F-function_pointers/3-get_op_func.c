@@ -3,7 +3,7 @@
 /**
  * get_op_func - selects the correct function to perform
  * the operation asked by the user.
- * @S: string
+ * @s: string
  * Return: the correct function pointer
  */
 int (*get_op_func(char *s))(int, int)
@@ -24,6 +24,6 @@ int (*get_op_func(char *s))(int, int)
 			return (ops[i].f);
 		i++;
 	}
-	
+
 	return (NULL);
 }
