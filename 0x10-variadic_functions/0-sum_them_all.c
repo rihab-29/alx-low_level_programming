@@ -16,9 +16,8 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 	}
 	va_start(ap, n);
-	do {
+	while (i--)
 		sum += va_arg(ap, int);
-	} while (i--);
 	va_end(ap);
 	return (sum);
 }
