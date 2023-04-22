@@ -5,21 +5,21 @@
  * @separator: the string to be printed between the strings
  * @n: the number of strings
  * @...: the strings
+ * Return: void
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+	int i = n;
+	char *str;
 	va_list ap;
-	unsigned int index;
-
-	va_start(ap, n);
-
-	for (index = 0; index < n; index++)
+	if (!n)
 	{
-		printf("%d", va_arg(ap, int));
-
-		if (index != (n - 1) && separator != NULL)
-			printf("%s", separator);
+		printf("\n");
+		return;
 	}
-	printf("\n");
+	va_start(ap, n);
+	while (i--)
+		printf("%s%S", (str = va_arg(ap, char *)) ? str : "(nil)",
+				i ? (separator ? separator : "") : "\n");
 	va_end(ap);
 }
