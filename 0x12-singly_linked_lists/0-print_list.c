@@ -2,22 +2,22 @@
 
 /**
  * _strlen - returns the length of a string
- * @s: input string
+ * @str: input string
  * Return: length
  */
-int _strlen(char *s)
+int _strlen(char *str)
 {
 	int i;
 
 	i = 0;
 
-	if (!s)
+	if (!str)
 	{
 		return (0);
 	}
 	do {
 		i++;
-	} while (*s++);
+	} while (*str++);
 
 	return (i);
 }
