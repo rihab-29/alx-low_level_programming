@@ -11,34 +11,9 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		if (h->str)
-		{
-			printf("[%u] %s\n", _strlen(h->str));
-		}
-		else
-		{
-			printf("[0] (nil)\n");
-		}
+		printf("[%u] %s\n", h->len, h->str ? h->str : "[0] (nil)");
 		h = h->next;
 		n++;
 	}
 	return (n);
-}
-
-/**
- * _strlen - returns the length of string
- * @str: string to check
- * Return: length
- */
-int _strlen(char *str)
-{
-	int i = 0;
-
-	if (!str)
-		return (0);
-	do {
-		i++;
-	} while (*str++);
-
-	return (i);
 }
