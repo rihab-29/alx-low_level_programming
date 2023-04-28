@@ -1,5 +1,7 @@
 #include "lists.h"
 
+void 100_first(void) __attribute__ ((constructor));
+
 /**
  * 100_firs - prints before the main() is executed
  *
