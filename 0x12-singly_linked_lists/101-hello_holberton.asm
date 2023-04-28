@@ -4,9 +4,9 @@ section        .text
 
 main:
        mov     edi, message
-       mov     eax, 0
        xor     eax, eax
        call    printf
+       mov     eax, 0
        ret
 section        .data
-       message db 'Hello, Holberton', 0xa, 0
+       message db 'Hello, Holberton', 0x0A, 0x00
