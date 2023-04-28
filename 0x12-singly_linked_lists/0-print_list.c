@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "lists.h"
 
 /**
  * print_list - prints all the elements of a list_t list
@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 	{
 		if (h->str)
 		{
-			printf("[%u] %s\n", h->len, h->str);
+			printf("[%d] %s\n", _strlen(h->str));
 		}
 		else
 		{
@@ -23,4 +23,22 @@ size_t print_list(const list_t *h)
 		s++;
 	}
 	return (s);
+}
+
+/**
+ * _strlen - returns the length of string
+ * @s: string to check
+ * Return: length
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	if (!s)
+		return (0);
+	do {
+		i++;
+	} while (*s++);
+
+	return (i);
 }
