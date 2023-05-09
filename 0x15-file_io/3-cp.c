@@ -7,7 +7,7 @@ int main(int argc, char *argv[]);
  * check_file - checks that files can be opened
  * @file_from: the file copying from
  * @file_to: the file copying to
- * @argv: vector
+ * @argv: vector that contains the command line arguments
  */
 void check_file(int file_from, int file_to, char *argv[])
 {
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	check_file(file_from, file_to, argv);
 
-	for (number_char = 1024; number_char == 1024)
+	for (number_char = 1024; number_char == 1024;)
 	{
 		number_char = read(file_from, buffer, 1024);
 		if (number_char == -1)
