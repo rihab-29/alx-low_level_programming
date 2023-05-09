@@ -1,6 +1,7 @@
 #include "main.h"
 
 void check_file(int file_from, int file_to, char *argv[]);
+int main(int argc, char *argv[]);
 
 /**
  * check_file - checks that files can be opened
